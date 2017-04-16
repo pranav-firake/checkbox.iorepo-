@@ -3,7 +3,7 @@ $(document).ready(function ()
 	$("#btn").click(function () 
 	{
         $.ajax( {
-            url: 'http://checkbox.io/api/snippets',
+            url: 'http://54.149.148.211/api/snippets',
                 success: function(snippets){
 			        $.each(snippets, function () 
 			        {
