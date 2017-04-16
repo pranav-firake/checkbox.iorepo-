@@ -256,9 +256,9 @@ exports.saveSurvey = function(req, res) {
                     emailServer.send({
                         text: "Your survey has been created.\n" +
                               "Survey admin url:\n" + 
-                              "http://checkbox.io/surveys/admin/?token="+ token + "\n" +
+                              "http://54.149.148.211/surveys/admin/?token="+ token + "\n" +
                               "Public survey url: \n" + 
-                              "http://checkbox.io/surveys/?id=" + result[0]._id + "\n"
+                              "http://54.149.148.211/surveys/?id=" + result[0]._id + "\n"
                             , 
                             from:    "Chris Parnin <chris.parnin@gmail.com>", 
                             to:      owner + "<"+ contact +">",
