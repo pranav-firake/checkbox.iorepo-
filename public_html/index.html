@@ -49,6 +49,22 @@
 						<li><a href="developers.html">Developers</a></li>
 						<li><a href="researchers.html">Researchers</a></li>
 						<li><a href="studies.html">Studies</a></li>
+						<script type="text/javascript">
+							$(document).ready( function()
+									{
+									    var redis = require('redis');
+										//var client = redis.createClient(6379, redisIp, {});
+										var value = true;
+										//client.get("feature", function(err, value){
+											if(value){
+											   document.write(converter.makeHtml("**feature flag on**"));
+											}
+											else{
+												document.write(converter.makeHtml("feature flag off*"));
+											}
+										//});
+									});
+						</script>
 					</ul>
 				</div>
 			</div>
